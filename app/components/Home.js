@@ -78,6 +78,7 @@ function Home({ adminId, posterId }) {
             </div>
           ) : (
           <div>Snap Video</div> 
+          
    )}
         </div>
       </div>
