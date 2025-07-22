@@ -18,10 +18,7 @@ function Home({ adminId, posterId }) {
       <Webcam
         audio={false}
         className="object-cover h-screen w-screen lg:w-auto"
-        // height={1080}
-        // width={1262}
-        // screenshotFormat="image/jpeg"
-        // videoConstraints={videoConstraints}
+      
       />
 
       <div className="absolute  flex justify-center items-center inset-0 font-sans mx-2 lg:mx-0">
@@ -79,20 +76,19 @@ function Home({ adminId, posterId }) {
               </div>
             </div>
           ) : (
-            <div className="relative z-10 shadow-2xl">
-          {" "}
-          <button
-            onClick={() => router.push("/signin")}
-            className="bg-[#bfdbfe] absolute mt-[300px] left-[25%] md:left-[42%]  top-[50%]  px-10 py-3 rounded-full text-black text-[16px] font-OpenSans flex items-center gap-2 "
-          >
-            <img
-              src="/images/google-logo-small.png"
-              alt="logo"
-              className="absolute top-[50%] left-[10%] translate-x-[-50%] translate-y-[-50%] w-[30px] h-[30px]"
-            />{" "}
-            Continue with Google
-          </button>
-        </div>
+             <div className="flex justify-center items-center h-screen w-screen">
+    <button
+      onClick={() => router.push("/signin")}
+      className="bg-[#bfdbfe] px-10 py-3 rounded-full text-black text-[16px] font-OpenSans flex items-center gap-2"
+    >
+      <img
+        src="/images/google-logo-small.png"
+        alt="logo"
+        className="w-[30px] h-[30px]"
+      />
+      Continue with Google
+    </button>
+  </div>
           )}
         </div>
       </div>
