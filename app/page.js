@@ -1,6 +1,6 @@
 "use client";
 function Home() {
-  return <div>Gmail login</div>;
+  return <div>Snap Video</div>;
 }
 
 export default Home;
